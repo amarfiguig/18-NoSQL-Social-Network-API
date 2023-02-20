@@ -1,0 +1,33 @@
+{
+  "name": "11-express.js-challenge",
+  "version": "1.0.0",
+  "description": "Express.js Challenge",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "inquirer": "^7.3.3",
+    "jest": "^26.6.3",
+    "uuid": "^8.3.2",
+    "uuidv1": "^1.6.14",
+    "uuidv4": "^6.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgeebn16/11-Express.js-Challenge.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorgeebn16/11-Express.js-Challenge/issues"
+  },
+  "homepage": "https://github.com/jorgeebn16/11-Express.js-Challenge#readme",
+  "keywords": []
+}
