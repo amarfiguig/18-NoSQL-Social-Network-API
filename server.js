@@ -1,20 +1,28 @@
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
+// Import the express library
+const express = require("express");
 
+// Import the database connection from the config directory
+const db = require("./config/connection");
 
+// Import the routes module
+const routes = require("./routes");
 
-const express = require('express');
+// Set the port number for the server to run on, default to 3001 if not specified in the environment
 const PORT = process.env.PORT || 3001;
+
+// Create an instance of the express application
 const app = express();
-app.use(express.urlencoded({ extended: true}));
+
+// Set up middleware to parse request bodies as URL-encoded or JSON
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use('/api', apiRoutes);
-app.use('/', htmlRoutes);
-app.use(express.static('public'));
 
+// Register the routes with the application
+app.use(routes);
 
-// Listener
-// ===========================================================
+// Open a connection to the database and start the server on the specified port
+db.once("open", () => {
 app.listen(PORT, () => {
-    console.log(`API server now on port ${PORT}`);
+console.log(`API server port ${PORT}`);
+  });
 });
