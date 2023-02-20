@@ -1,33 +1,25 @@
 {
-  "name": "11-express.js-challenge",
+  "name": "18-NoSQL-Social-Network-API",
   "version": "1.0.0",
-  "description": "Express.js Challenge",
+  "description": "",
   "main": "server.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "inquirer": "^7.3.3",
-    "jest": "^26.6.3",
-    "uuid": "^8.3.2",
-    "uuidv1": "^1.6.14",
-    "uuidv4": "^6.2.6"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jorgeebn16/11-Express.js-Challenge.git"
+    "url": "git+https://github.com/amarfiguig/18-NoSQL-Social-Network-API.git"
   },
+  "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jorgeebn16/11-Express.js-Challenge/issues"
+    "url": "https://github.com/amarfiguig/18-NoSQL-Social-Network-API/issues"
   },
-  "homepage": "https://github.com/jorgeebn16/11-Express.js-Challenge#readme",
-  "keywords": []
+  "homepage": "https://github.com/amarfiguig/18-NoSQL-Social-Network-API#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18"
+  }
 }
