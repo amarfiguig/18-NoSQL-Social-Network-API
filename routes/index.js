@@ -1,16 +1,17 @@
-// Require express router
+// Require the express router
 const router = require('express').Router();
 
-// Import all of the API routes 
-const apiRoutes = require('./api');
+// Import the user-routes module
+const userRoutes = require('./user-routes');
 
-// add prefix of `/api` to all of the api routes
-router.use('/api', apiRoutes);
+// Import the thought-routes module
+const thoughtRoutes = require('./thought-routes');
 
-// 404 Status error message
-router.use((req, res) => {
-    res.status(404).send('<h1>404 Error....</h1>');
-  });
+// Add a middleware that handles all routes for '/users' and delegates them to userRoutes module
+router.use('/users', userRoutes);
 
-// Module exports router
+// Add a middleware that handles all routes for '/thoughts' and delegates them to thoughtRoutes module
+router.use('/thoughts', thoughtRoutes);
+
+// Export the router to make it available to other modules
 module.exports = router;
