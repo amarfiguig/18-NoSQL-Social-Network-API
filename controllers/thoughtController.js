@@ -1,5 +1,7 @@
+// Importing Thought and User models
 const { Thought, User } = require("../models");
 
+// Controller for thoughts 
 const thoughtController = {
   // Get all thoughts
   getThoughts(req, res) {
