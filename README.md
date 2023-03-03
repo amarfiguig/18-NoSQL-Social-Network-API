@@ -1,5 +1,4 @@
 # 18-NoSQL-Social-Network-API
-[MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 NoSQL-Social-Network-API is an example of a backend API that uses a NoSQL database (MongoDB) to store data for a social network. It was created as a project for the University of Toronto Coding Boot Camp, and serves as an example of how to build a backend API using Node.js, Express.js, and MongoDB.
 
